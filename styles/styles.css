@@ -1,0 +1,94 @@
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: none;
+  border-top: 4px solid #FFF;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  z-index: 2000;
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #FF3D00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.modal-overlay {
+  background-color: #000000;
+  opacity: 0.75;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 500;
+}
+.cumtom-modal {
+  
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  
+}
+.accuracypos {
+  position: absolute;
+  top:50px;
+  right:50px;
+}
+
+section {
+  position: relative;
+}
+.closeBTN {
+  position: absolute;
+  
+  top: -20px;
+  right: -20px;
+}
+
+
+@media only screen and (min-width: 470px) {
+  .fd {
+    flex-direction: row;
+  }
+  .mol {
+    min-width: 478px;
+  }
+  
+  
+
+  
+}
+@media only screen and (max-width: 1020px) {
+  #moda-container {
+    overflow: scroll;
+    max-height: 500px;
+    
+  }
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Universe Hub by Shazzad Hossen</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-7xl mx-auto p-6 ">
+
+
+    <span id="loader" class="loader"></span>
+
+
+
+
+
+
+
+    <div class="hidden modal-overlay " id="modalOverlay"></div>
+
+
+        <!-- Moddal -->
+        <section id="modal-Section" class="hidden cumtom-modal bg-white rounded-2xl">
+            <button class="closeBTN bg-red-700 p-6 rounded-full"  onclick="closeBtnFunction()"> <img src="./images/close.png" alt=""></button>
+
+            <div id="moda-container" class=" py-8 border-2 rounded-2xl">
+        
+            </div>
+
+            
+
+        </section>
+        
+
+    <header>
+        <h1 class=" text-center text-4xl font-bold my-14">AI Universe Hub</h1>
+
+    </header>
+
+
+
+    <!-- Grid Container -->
+    <button class="flex mx-auto font-bold text-lg bg-orange-600 text-white p-3 rounded-xl mb-10"
+        onclick="sortByDate()">Sort By Date</button>
+    <div id="grid-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-y-6 gap-x-6 ">
+        <!-- Tools Card appeared here  -->
+    </div>
+
+    <button class="flex mx-auto font-bold text-lg bg-orange-600 text-white p-3 rounded-xl my-10" onclick="seeMore()">See More</button>
+
+
+
+
+    <script src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</body>
+
+</html>
